@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.noisycrayons.sample"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>JS Scratch Card Sample</name>
+
+  <description>
+      Sample for sratch card
+  </description>
+
+  <author href="https://www.noisycrayons.com" email="info@noisycrayons.com">
+      Yong Chee Wei
+  </author>
+
+</widget>
