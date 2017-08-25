@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Scratch Card Example</title>
+<script type="text/javascript" src="js/scratch.js"></script>
+<script type="application/javascript">
+	var __nc = {};
+	function onCallBack(){
+		alert("you win");
+	};
+	window.onload = function() {
+		createScratchCard({
+				'container': document.getElementById('thisScratchCard'),
+				'background': 'images/win.jpg',
+				'foreground': 'images/cover.jpg',
+				'coin':'images/coin2.png',
+				'percent':50,
+				'thickness':16,
+				'flashPath':'js/scratchcard.swf',
+				'counter':'counter',
+				'callback':'onCallBack'
+			});
+	}
+</script>
+<style type="text/css">
+	.other_container{
+		/* just want to show you the scratchcard can be everywhere even in other container */
+		height:100vh;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.scratchcard{
+		position:absolute;
+		width:400px;
+		height:300px;
+		margin:auto;
+	}
+</style>
+</head>
+
+<body>
+<div class="other_container">
+<div class="scratchcard" id="thisScratchCard">
+</div>
+</div>
+</body>
+</html>
